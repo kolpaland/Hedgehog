@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hedgehog">
         <activity
+            android:name=".ThirdPage"
+            android:exported="false" />
+        <activity
+            android:name=".SecondPage"
+            android:exported="false" />
+        <activity
             android:name=".FirstPage"
             android:exported="false" />
         <activity

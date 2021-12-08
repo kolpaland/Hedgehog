@@ -5,20 +5,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 
-class FirstPage : AppCompatActivity() {
+class SecondPage : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_first_page)
+        setContentView(R.layout.activity_second_page)
 
         val buttonBack = findViewById<ImageButton>(R.id.imageButton3)
         buttonBack.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, FirstPage::class.java)
             startActivity(intent)
         }
 
         val buttonNext = findViewById<ImageButton>(R.id.imageButton2)
         buttonNext.setOnClickListener {
-            val intent = Intent(this, SecondPage::class.java)
+            val intent = Intent(this, ThirdPage::class.java)
             startActivity(intent)
         }
     }
